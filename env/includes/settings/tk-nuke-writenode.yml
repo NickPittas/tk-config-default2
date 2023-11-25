@@ -57,6 +57,4 @@ settings.tk-nuke-writenode.shot:
     tank_type: Rendered Image
     tile_color: []
     promote_write_knobs: [datatype, compression]
-
-    
   location: "@apps.tk-nuke-writenode.location"
