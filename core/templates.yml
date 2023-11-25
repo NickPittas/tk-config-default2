@@ -411,10 +411,10 @@ paths:
         definition: '@shot_root/work/images/{name}/v{version}/{width}x{height}/{Shot}_BLC_{nuke.output}_v{version}_{SEQ}.exr'
     nuke_shot_render_pub_mono_exr:
         definition: '@shot_root/publish/elements/{name}/v{version}/{width}x{height}/{Shot}_BLC_{nuke.output}_v{version}_{SEQ}.exr'
-    # nuke_shot_render_pub_mxf:
-    #     definition: '@shot_root/publish/elements/{name}/v{version}/{width}x{height}/{Shot}_BLC_{nuke.output}_v{version}.mxf'
-    # nuke_shot_render_mxf:
-    #     definition: '@shot_root/work/images/{name}/v{version}/{width}x{height}/{Shot}_BLC_{nuke.output}_v{version}.mxf'
+    nuke_shot_render_pub_mxf:
+        definition: '@shot_root/publish/elements/{name}/v{version}/{width}x{height}/{Shot}_BLC_{nuke.output}_v{version}.mxf'
+    nuke_shot_render_mxf:
+        definition: '@shot_root/work/images/{name}/v{version}/{width}x{height}/{Shot}_BLC_{nuke.output}_v{version}.mxf'
     # review output
     shot_quicktime_quick:
         definition: '@shot_root/review/quickdaily/{Shot}_BLC_{nuke.output}_v{version}_{iteration}.mov'

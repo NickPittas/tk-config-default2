@@ -64,10 +64,8 @@ settings.tk-nuke-writenode.shot:
     proxy_render_template:
     publish_template: nuke_shot_render_pub_mxf
     render_template: nuke_shot_render_mxf
-    settings:
-      mxf_edit_rate_knob: 24
-      mxf_codec_profile_knob: "LB 4:2:2 8-bit"
+    settings: {}
     tank_type: Rendered Image
     tile_color: []
-    promote_write_knobs: [mxf_codec_profile_knob]
+    promote_write_knobs: [file_type, mxf_codec_profile_knob]
   location: "@apps.tk-nuke-writenode.location"
