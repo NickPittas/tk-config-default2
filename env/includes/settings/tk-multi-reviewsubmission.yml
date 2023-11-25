@@ -21,7 +21,7 @@ includes:
 settings.tk-multi-reviewsubmission.nuke.asset:
   display_name: Send for review
   movie_path_template: nuke_asset_render_movie
-  slate_logo: '{config}/../icons/KENT_WHITE.png'
+  slate_logo: '{config}/KENT_WHITE.png'
   location: "@apps.tk-multi-reviewsubmission.location"
 
 # shot
@@ -29,7 +29,7 @@ settings.tk-multi-reviewsubmission.nuke.shot:
   display_name: Send for review
   movie_path_template: nuke_shot_render_movie
   render_media_hook: '{self}/render_media.py:{config}/{engine_name}/render_media.py'
-  slate_logo: '{config}/../icons/KENT_WHITE.png'
+  slate_logo: '{config}/KENT_WHITE.png'
   location: "@apps.tk-multi-reviewsubmission.location"
 
 # Maya Playblast
