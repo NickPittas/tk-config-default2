@@ -407,14 +407,13 @@ paths:
     nuke_shot_publish:
         definition: '@shot_root/publish/nuke/{name}.v{version}.nk'
     # # write node outputs
-    # nuke_shot_render_mono_exr:
-    #     definition: '@shot_root/work/images/{name}/v{version}/{width}x{height}/{Shot}_BLC_{nuke.output}_v{version}_{SEQ}.exr'
-    # nuke_shot_render_pub_mono_exr:
-    #     definition: '@shot_root/publish/elements/{name}/v{version}/{width}x{height}/{Shot}_BLC_{nuke.output}_v{version}_{SEQ}.exr'
-    # write node outputs
-    nuke_shot_render_mono_exr:
+    nuke_shot_render_mono_exr16:
         definition: '@shot_root/work/images/{name}/v{version}/{width}x{height}/{Shot}_BLC_{nuke.output}_v{version}_{SEQ}.exr'
-    nuke_shot_render_pub_mono_exr:
+    nuke_shot_render_pub_mono_exr16:
+        definition: '@shot_root/publish/elements/{name}/v{version}/{width}x{height}/{Shot}_BLC_{nuke.output}_v{version}_{SEQ}.exr'
+    nuke_shot_render_mono_exr32:
+        definition: '@shot_root/work/images/{name}/v{version}/{width}x{height}/{Shot}_BLC_{nuke.output}_v{version}_{SEQ}.exr'
+    nuke_shot_render_pub_mono_exr32:
         definition: '@shot_root/publish/elements/{name}/v{version}/{width}x{height}/{Shot}_BLC_{nuke.output}_v{version}_{SEQ}.exr'
     # nuke_shot_render_pub_mxf:
     #     definition: '@shot_root/publish/elements/{name}/v{version}/{width}x{height}/{Shot}_BLC_{nuke.output}_v{version}.mxf'

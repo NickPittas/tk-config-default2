@@ -39,8 +39,8 @@ settings.tk-nuke-writenode.shot:
     name: Mono Exr, 32 bit
     proxy_publish_template:
     proxy_render_template:
-    publish_template: nuke_shot_render_pub_mono_exr
-    render_template: nuke_shot_render_mono_exr
+    publish_template: nuke_shot_render_pub_mono_exr32
+    render_template: nuke_shot_render_mono_exr32
     settings:
       datatype: 32 bit float
     tank_type: Rendered Image
@@ -50,8 +50,8 @@ settings.tk-nuke-writenode.shot:
     name: Mono Exr, 16 bit
     proxy_publish_template:
     proxy_render_template:
-    publish_template: nuke_shot_render_pub_mono_exr
-    render_template: nuke_shot_render_mono_exr
+    publish_template: nuke_shot_render_pub_mono_exr16
+    render_template: nuke_shot_render_mono_exr16
     settings:
       datatype: 16 bit half
     tank_type: Rendered Image
