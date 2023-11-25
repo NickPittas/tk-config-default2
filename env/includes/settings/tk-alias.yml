@@ -1,0 +1,75 @@
+# Copyright (c) 2022 Autodesk Inc.
+#
+# CONFIDENTIAL AND PROPRIETARY
+#
+# This work is provided "AS IS" and subject to the ShotGrid Pipeline Toolkit
+# Source Code License included in this distribution package. See LICENSE.
+# By accessing, using, copying or modifying this work you indicate your
+# agreement to the ShotGrid Pipeline Toolkit Source Code License. All rights
+# not expressly granted therein are reserved by Autodesk Inc.
+#
+
+################################################################################
+
+includes:
+- ../app_locations.yml
+- ../engine_locations.yml
+- ./tk-multi-breakdown2.yml
+- ./tk-multi-loader2.yml
+- ./tk-multi-publish2.yml
+- ./tk-multi-shotgunpanel.yml
+- ./tk-multi-workfiles2.yml
+- ./tk-multi-data-validation.yml
+
+################################################################################
+
+# asset
+settings.tk-alias.asset:
+  apps:
+    tk-multi-about:
+      location: "@apps.tk-multi-about.location"
+    tk-multi-pythonconsole:
+      location: "@apps.tk-multi-pythonconsole.location"
+    tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.alias"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.alias"
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  location: "@engines.tk-alias.location"
+
+# asset_step
+settings.tk-alias.asset_step:
+  apps:
+    tk-multi-about:
+      location: "@apps.tk-multi-about.location"
+    tk-multi-pythonconsole:
+      location: "@apps.tk-multi-pythonconsole.location"
+    tk-multi-breakdown2: "@settings.tk-multi-breakdown2.alias"
+    tk-multi-loader2: "@settings.tk-multi-loader2.alias"
+    tk-multi-publish2: "@settings.tk-multi-publish2.alias.asset_step"
+    tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.alias"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.alias.asset_step"
+    tk-multi-data-validation: "@settings.tk-multi-data-validation.alias"
+    tk-multi-bg-publish:
+      location: "@apps.tk-multi-bg-publish.location"
+  reference_template: alias_asset_reference_publish
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  - {app_instance: tk-multi-workfiles2, name: File Save...}
+  - {app_instance: tk-multi-publish2, name: Publish...}
+  location: "@engines.tk-alias.location"
+
+# project
+settings.tk-alias.project:
+  apps:
+    tk-multi-about:
+      location: "@apps.tk-multi-about.location"
+    tk-multi-pythonconsole:
+      location: "@apps.tk-multi-pythonconsole.location"
+    tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.alias"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.alias"
+    tk-multi-data-validation: "@settings.tk-multi-data-validation.alias"
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  run_at_startup:
+  - { app_instance: tk-multi-workfiles2, name: 'File Open...' }
+  location: "@engines.tk-alias.location"
