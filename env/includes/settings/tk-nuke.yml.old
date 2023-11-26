@@ -24,7 +24,7 @@ includes:
 - ./tk-multi-shotgunpanel.yml
 - ./tk-multi-snapshot.yml
 - ./tk-multi-workfiles2.yml
-- ./tk-nuke-writenode.yml
+- .\dev\tk-nuke-writenode.yml
 
 ################################################################################
 # Hiero

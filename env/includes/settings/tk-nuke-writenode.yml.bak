@@ -31,8 +31,6 @@ settings.tk-nuke-writenode.asset:
     promote_write_knobs: []
   location: "@apps.tk-nuke-writenode.location"
 
-
-
 # shot
 settings.tk-nuke-writenode.shot:
   template_script_work: nuke_shot_work
@@ -47,9 +45,10 @@ settings.tk-nuke-writenode.shot:
       datatype: 32 bit float
     tank_type: Rendered Image
     tile_color: []
-    promote_write_knobs: [compression]
+    promote_write_knobs: [datatype, compression]
   - file_type: exr
     name: Mono Exr, 16 bit
+
     proxy_publish_template:
     proxy_render_template:
     publish_template: nuke_shot_render_pub_mono_exr
@@ -58,21 +57,5 @@ settings.tk-nuke-writenode.shot:
       datatype: 16 bit half
     tank_type: Rendered Image
     tile_color: []
-    promote_write_knobs: [compression]
-
-  - file_type: mxf
-    name: MXF
-    proxy_publish_template:
-    proxy_render_template:
-    publish_template: nuke_shot_render_pub_mxf
-    render_template: nuke_shot_render_mxf
-    settings: 
-      mxf_edit_rate_knob: 24
-      mxf_codec_profile_knob: "LB 4:2:2 8-bit"
-    tank_type: MXF
-    tile_color: []
-    promote_write_knobs: []
+    promote_write_knobs: [datatype, compression]
   location: "@apps.tk-nuke-writenode.location"
-    # location:
-    #   type: path
-    #   path: '{CONFIG_FOLDER}\dev\tk-nuke-writenode'

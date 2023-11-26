@@ -125,9 +125,11 @@ apps.tk-nuke-quickreview.location:
   name: tk-nuke-quickreview
   version: v1.2.1
 apps.tk-nuke-writenode.location:
-  name: tk-nuke-writenode
-  type: app_store
-  version: v1.6.2
+  # type: app_store
+  # version: v1.6.2
+  type: git
+  path: https://github.com/NickPittas/tk-nuke-writenode.git
+  version: 1.0.0 
 apps.tk-flame-export.location:
   name: tk-flame-export
   type: app_store

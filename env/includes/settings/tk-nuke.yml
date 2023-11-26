@@ -113,6 +113,10 @@ settings.tk-nuke.asset_step:
       settings_hook: "{config}/tk-nuke-quickreview/settings.py:{config}/tk-nuke-quickreview/settings.py"
       location: "@apps.tk-nuke-quickreview.location"
     tk-nuke-writenode: "@settings.tk-nuke-writenode.asset"
+    # tk-nuke-writenode:
+    #   location: 
+    #     type: path
+    #     path: '{CONFIG_FOLDER}\dev\tk-nuke-writenode'
   menu_favourites:
   - {app_instance: tk-multi-workfiles2, name: File Open...}
   - {app_instance: tk-multi-snapshot, name: Snapshot...}
@@ -188,6 +192,10 @@ settings.tk-nuke.shot_step:
       settings_hook: "{config}/tk-nuke-quickreview/settings.py:{config}/tk-nuke-quickreview/settings.py"
       location: "@apps.tk-nuke-quickreview.location"
     tk-nuke-writenode: "@settings.tk-nuke-writenode.shot"
+    # tk-nuke-writenode:
+    #   location: 
+    #     type: path
+    #     path: '{CONFIG_FOLDER}\dev\tk-nuke-writenode'
   menu_favourites:
   - {app_instance: tk-multi-workfiles2, name: File Open...}
   - {app_instance: tk-multi-snapshot, name: Snapshot...}
@@ -218,6 +226,10 @@ settings.tk-nuke.nukestudio.asset_step:
       settings_hook: "{config}/tk-nuke-quickreview/settings.py:{config}/tk-nuke-quickreview/settings.py"
       location: "@apps.tk-nuke-quickreview.location"
     tk-nuke-writenode: "@settings.tk-nuke-writenode.asset"
+    # tk-nuke-writenode:
+      # location: 
+        # type: path
+        # path: '{CONFIG_FOLDER}\dev\tk-nuke-writenode'
   bin_context_menu:
   - app_instance: tk-multi-workfiles2
     keep_in_menu: false
@@ -308,6 +320,10 @@ settings.tk-nuke.nukestudio.shot_step:
       settings_hook: "{config}/tk-nuke-quickreview/settings.py:{config}/tk-nuke-quickreview/settings.py"
       location: "@apps.tk-nuke-quickreview.location"
     tk-nuke-writenode: "@settings.tk-nuke-writenode.shot"
+    # tk-nuke-writenode:
+    #   location: 
+    #     type: path
+    #     path: '{CONFIG_FOLDER}\dev\tk-nuke-writenode'
   bin_context_menu:
   - app_instance: tk-multi-workfiles2
     keep_in_menu: false
